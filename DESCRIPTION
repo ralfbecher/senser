@@ -1,0 +1,21 @@
+Package: senser
+Type: Package
+Title: R Package to retrieve data from Qlik Sense
+Version: 0.2.0
+Date: 2018-11-02
+Author: Ralf Becher
+Maintainer: Ralf Becher <ralf.becher@web.de>
+Description: This Package provides functions to connect Qlik Sense via q-risotto
+  (the Qlik Sense REST API wrapper service) and to retrieve data out of Qlik
+  Sense applications by defining HyperCubes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports: 
+    dplyr,
+    httr,
+    jsonlite,
+    lubridate,
+    utils,
+    magrittr
