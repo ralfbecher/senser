@@ -47,5 +47,5 @@ senser_timeline_fmt <- function(host,
 
   senser_timeline(host, port, app, hyperCubeDef, fields, tz) %>%
     # format the date/timestamp field (used for DataRobot integration)
-    dplyr::mutate_at(1, format, format = format)
+    dplyr::mutate_at(1, base::format, format = format)
 }

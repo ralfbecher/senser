@@ -110,10 +110,13 @@ senser_data <- function(host,
         encode = enc,
         config = conf
       )
+
     d <- jsonlite::fromJSON(httr::content(r, "text"))
+
   }
 
   names(d) <- fields
 
   d
 }
+
